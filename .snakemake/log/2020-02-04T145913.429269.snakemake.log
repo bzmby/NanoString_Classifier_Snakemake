@@ -1,0 +1,4 @@
+Building DAG of jobs...
+WildcardError in line 8 of /home/b.moumbeini/snakemaker/Snakefile:
+Wildcards in input files cannot be determined from output files:
+'sample'

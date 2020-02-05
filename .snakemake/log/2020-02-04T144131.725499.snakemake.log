@@ -1,0 +1,9 @@
+Building DAG of jobs...
+MissingInputException in line 3 of /home/b.moumbeini/snakemaker/Snakefile:
+Missing input files for rule all:
+20190124_CFMPB559run1_CF30207_01.pdf
+20190124_CFMPB559run1_CF30209_03.pdf
+20190124_CFMPB559run1_CF30211_05.pdf
+20190124_CFMPB559run1_CF30214_08.pdf
+20190124_CFMPB559run1_CF30213_07.pdf
+20190124_CFMPB559run1_CF30212_06.pdf

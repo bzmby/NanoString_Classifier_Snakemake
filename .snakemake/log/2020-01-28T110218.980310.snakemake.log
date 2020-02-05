@@ -1,0 +1,30 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 1
+Rules claiming more threads will be scaled down.
+Job counts:
+	count	jobs
+	1	QC
+	1
+
+[Tue Jan 28 11:02:19 2020]
+rule QC:
+    input: 20190124_CFMPB559run1_CF30207_01.RCC, 20190124_CFMPB559run1_CF30212_06.RCC, 20190124_CFMPB559run1_CF30209_03.RCC, 20190124_CFMPB559run1_CF30213_07.RCC, 20190124_CFMPB559run1_CF30211_05.RCC, 20190124_CFMPB559run1_CF30214_08.RCC
+    output: 20190124_CFMPB559run1_CF30207_01.pdf, 20190124_CFMPB559run1_CF30212_06.pdf, 20190124_CFMPB559run1_CF30209_03.pdf, 20190124_CFMPB559run1_CF30213_07.pdf, 20190124_CFMPB559run1_CF30211_05.pdf, 20190124_CFMPB559run1_CF30214_08.pdf, quality_control.csv
+    jobid: 0
+
+Waiting at most 5 seconds for missing files.
+MissingOutputException in line 1 of /home/b.moumbeini/snakemaker/Snakefile:
+Missing files after 5 seconds:
+20190124_CFMPB559run1_CF30207_01.pdf
+20190124_CFMPB559run1_CF30212_06.pdf
+20190124_CFMPB559run1_CF30209_03.pdf
+20190124_CFMPB559run1_CF30213_07.pdf
+20190124_CFMPB559run1_CF30211_05.pdf
+20190124_CFMPB559run1_CF30214_08.pdf
+This might be due to filesystem latency. If that is the case, consider to increase the wait time with --latency-wait.
+Removing output files of failed job QC since they might be corrupted:
+quality_control.csv
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
+Complete log: /home/b.moumbeini/snakemaker/.snakemake/log/2020-01-28T110218.980310.snakemake.log
